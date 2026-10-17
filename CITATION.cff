@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and specify the software commit used."
+title: "Small Integral Lifts of K3 Boundary Labels: Exact Chart Heights and Saturated Quotient Certificates"
+authors:
+  - family-names: Gupta
+    given-names: Shivam
+date-released: 2026-10-17
+version: 1.0.0
+repository-code: "https://github.com/shi1720/k3-cusp-lifts"
+license: MIT

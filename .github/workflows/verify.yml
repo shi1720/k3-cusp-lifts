@@ -1,0 +1,16 @@
+name: Verify exact certificates
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  exact-arithmetic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - run: python3 -O -m unittest discover -s tests -p 'test_*.py'
+      - run: python3 src/verify.py results/certificates.jsonl
+      - run: python3 src/verify.py results/stress_certificates.jsonl
+      - run: python3 tests/run_study.py
+      - run: python3 tests/full_lattice_example.py

@@ -1,0 +1,65 @@
+{
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "seed": 6052026,
+  "atlas_degrees": 4096,
+  "atlas_certificates": 12710,
+  "atlas_seconds": 6.109266708,
+  "independent_chart_cases": 1025,
+  "unrestricted_fixed_z_cases": 1024,
+  "sharp_family_cases": 999,
+  "large_integer_cases": 500,
+  "rejected_mutations": 5,
+  "nontrivial_labels": 8614,
+  "strict_reductions": 8489,
+  "median_height_reduction": 12.166666666666666,
+  "max_height_reduction": 32.0,
+  "max_small_chart_to_opt_ratio": 1.4285714285714286,
+  "benchmark": [
+    [
+      16,
+      40,
+      16.667,
+      381.2085
+    ],
+    [
+      64,
+      40,
+      17.8125,
+      405.771
+    ],
+    [
+      128,
+      40,
+      18.0835,
+      412.896
+    ],
+    [
+      256,
+      40,
+      18.3335,
+      418.6875
+    ],
+    [
+      512,
+      40,
+      19.646,
+      457.396
+    ],
+    [
+      1024,
+      40,
+      21.8545,
+      525.9585
+    ]
+  ],
+  "result_sha256": {
+    "certificates.jsonl": "61f7df45e979ded9608dfd0c333cb09fd18f55355071346592cd2ef9a96970af",
+    "stress_certificates.jsonl": "99dd3d4b2dda1ed5f19b419304295ad1bc802a7cd059c4a65cf840c8cd4e84ec",
+    "full_lattice_example.json": "a6b3d5a833995e0f782c213fd0c4953e4a02a166c93adf2ef2acbeaec1856469",
+    "atlas.csv": "67d9b14ac31d12a9c8088982d81d4c2891920b3ddd0a1078042c519fc9c43df0",
+    "sharp_family.csv": "4f7a2219db40687b8e25d4a6499fc00ee9579384c6dd00196bedd9319ad77819",
+    "timing.csv": "af1d4af218840d30144b3605c819595305a285f5e52570691bc12b9ef33d4a6c",
+    "exact.csv": "c20ac31086b43f40c6acc0777a6395ecbc9f15570dca5281ec932755a6234a27"
+  }
+}
