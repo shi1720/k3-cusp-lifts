@@ -57,7 +57,11 @@ Coordinates in the five-coordinate sublattice are `(x1, y1, x2, y2, z)`, with no
 - 1,025 independent chart minima and 1,024 exact fixed-z, five-coordinate searches.
 - 999 members of a family whose full-lattice optimum is proved analytically.
 - 500 large-integer certificates and a separate full 21-coordinate E8 example.
-- Targeted invalid-certificate rejection and eight unit tests, including execution under `-O`.
+- Targeted invalid-certificate rejection and ten unit tests, including execution under `-O`.
+
+The transport fields `P` and `Q` must be 2-by-2 integer matrices. The verifier
+rejects rectangular arrays and higher-dimensional determinant-one extensions,
+even when their leading 2-by-2 blocks would induce the same action.
 
 ## Scope
 

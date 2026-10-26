@@ -16,6 +16,18 @@ class VerifierTests(unittest.TestCase):
  def test_reject_wrong_isometry(self):
   c=certificate(819,3,1);c['Q'][0][0]+=1
   self.assertFalse(verify(c))
+ def test_reject_rectangular_transport(self):
+  for key in ['P','Q']:
+   with self.subTest(key=key):
+    c=certificate(819,3,1)
+    c[key]=[row+[0] for row in c[key]]
+    self.assertFalse(verify(c))
+ def test_reject_higher_dimensional_transport(self):
+  for key in ['P','Q']:
+   with self.subTest(key=key):
+    c=certificate(819,3,1)
+    c[key]=[row+[0] for row in c[key]]+[[0,0,1]]
+    self.assertFalse(verify(c))
  def test_reject_wrong_norm(self):
   c=certificate(819,3,1);c['c'][0]+=1
   self.assertFalse(verify(c))

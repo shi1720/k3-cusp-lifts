@@ -4,7 +4,7 @@ title: "Small Integral Lifts of K3 Boundary Labels: Exact Chart Heights and Satu
 authors:
   - family-names: Gupta
     given-names: Shivam
-date-released: 2026-10-17
-version: 1.0.0
+date-released: 2026-10-26
+version: 1.0.1
 repository-code: "https://github.com/shi1720/k3-cusp-lifts"
 license: MIT

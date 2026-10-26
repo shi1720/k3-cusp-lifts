@@ -66,6 +66,10 @@ def verify(C):
         if not max(map(abs, c)) == m * T:
             raise AssertionError()
         (P, Q) = (C['P'], C['Q'])
+        if not all(isinstance(M, list) and len(M) == 2 and
+                   all(isinstance(row, list) and len(row) == 2 for row in M)
+                   for M in (P, Q)):
+            raise AssertionError()
         if not det(P) == det(Q) == 1:
             raise AssertionError()
 
